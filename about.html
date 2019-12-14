@@ -1,13 +1,13 @@
-<?php 
-include 'header.php'; 
-?>
+{% extends "header.html" %}
+{% block body %}
 <style type="text/css">
   p{
     font-size: 16px;
   }
 </style>
+
     <!-- Page Header Start -->
-    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+    <div class="page-header" style="background: url('{{url_for('static',filename='assets/img/banner1.jpg')}}');">
       <div class="container">
         <div class="row">         
           <div class="col-md-12">
@@ -44,15 +44,11 @@ include 'header.php';
             
         
             
-            <!-- <ul class="info-list">
-              <li><a href="#"><i class="fa fa-check"></i> We are committed to deliver efficient, innovative, cost-effective, reliable smart solutions and services in competitive, frequently changing and challenging world.</a></li>
-              <li><a href="#"><i class="fa fa-check"></i> Long-term whole-hearted relation instead of project to project relation.</a></li>
-              <li><a href="#"><i class="fa fa-check"></i> We are dedicated to offer solutions and service that makes you feel fully satisfied. Whoever work with us, feels like a part of family.</a></li>
-            </ul> -->
+            
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="img-thumb">
-                <img src="assets/img/about.jpg" alt="">
+                <img src="{{url_for('static',filename='assets/img/about.jpg')}}" alt="">
             </div>
         </div>
 
@@ -68,45 +64,11 @@ include 'header.php';
                    <div style="margin-bottom: 20px;"></div>
                    <div class="row">
                       <div class="col-md-12 col-sm-12 col-xs-12">
-                        <img src="assets/img/tech/webdevelopmrnt.png" alt="">
+                           <img src="{{url_for('static',filename='assets/img/tech/webdevelopmrnt.png')}}" alt="">
+                  
                       </div>
                    </div>
 
       </div>
     </div>
-
-    <!-- About Us section End -->   
-
-    <!-- Start Content Section -->
-    <!-- <section id="content" class="error-bg" style="background: url(assets/img/banner1.jpg);background-repeat: no-repeat;height:250px;>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="error-page">
-              <h3><a rel="nofollow" href="https://rebrand.ly/gg-bright-purchase">Please, Purchase full version to Get all <b>Pages</b> and <b>Features</b></a></h3>
-              <a rel="nofollow" href="https://rebrand.ly/gg-bright-purchase" class="btn btn-common">GET IT NOW!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Content Section  -->
-
-    <!-- Start Call to Action Section -->
-    <!-- <div class="cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-8">
-            <h3>Locavore food truck cornhole sustainable paleo hella.</h3>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <a href="#" class="btn btn-border">BUY NOW</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Call to Action Section -->
-
-<?php 
-include 'footer.php'; 
-?>
+{% endblock %}
