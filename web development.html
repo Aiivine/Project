@@ -1,0 +1,361 @@
+<?php 
+include 'header.php'; 
+?>
+<script>
+      var hash = window.location.hash,
+        current = 0,
+        demos = Array.prototype.slice.call( document.querySelectorAll( '#codrops-demos > a' ) );
+      
+      if( hash === '' ) hash = '#set-1';
+      setDemo( demos[ parseInt( hash.match(/#set-(\d+)/)[1] ) - 1 ] );
+
+      demos.forEach( function( el, i ) {
+        el.addEventListener( 'click', function() { setDemo( this ); } );
+      } );
+
+      function setDemo( el ) {
+        var idx = demos.indexOf( el );
+        if( current !== idx ) {
+          var currentDemo = demos[ current ];
+          currentDemo.className = currentDemo.className.replace(new RegExp("(^|\\s+)" + 'current-demo' + "(\\s+|$)"), ' ');
+        }
+        current = idx;
+        el.className = 'current-demo'; 
+      }
+    </script>
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title">Web Development</h2>
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span class="current">Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+    <!-- Start Content Section -->
+    <!-- <section id="content" class="error-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="error-page">
+              <h4>We will convert your ideas into an amazing Website for your brand.</h4>
+              <a rel="nofollow" href="https://rebrand.ly/gg-bright-purchase" class="btn btn-common">GET IT NOW!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Content Section  -->
+
+     <div class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row container">
+              <div class="about-header">
+                  <h4>Have an Amazing Website for your Brand</h4>
+                  <p>AIIVINE <!-- <span style="font-size: 70%;">LLP</span> --> offers Web Development Services in India and Worldwide.Web development is a wide concept that includes At AIIVINE we provide services web devlopment to web maintenance. <!-- Our Web designs are artistic flair and responsive with amazing and attractive looks. Beautiful and creative websites stick the visitor to your site which leads to more conversion ratio and helps to get rank in Search Engines also.  --></p>
+                  <div style="margin-bottom: 5px;"></div>
+                  <p>AIIVINE <!-- <span style="font-size: 70%;">LLP</span> --> is the leading Web Development Company in Rajkot, Gujarat, India. Either you require just some changes to your available website design or a full-scale website development, we are always available to help you and make you sure that you will be satisfied. Our main goal for web development and web design is to make our client satisfied and comfortable with us.</p>
+              </div>
+            </div>
+            <div class="row container">
+              <div class="about-header">
+                  <h4>Why to choose AIIVINE for Website Development?</h4>
+                  <p>In Today’s aera, your website must be responsive and mobile supportive. We work for you and design and develop a high-quality website that is responsive and shows the best solution for your business needs. We have an experienced team of web development to provide creative solutions. Our team members are caring and reliable with the wide knowledge of all latest technologies. All your business requirements, website design, website development, maintenance, hosting, and marketing, get at a place!</p>
+              </div>
+            </div>
+            <div style="height: 25px;">&nbsp;</div>
+            <div class="row container">
+              <div class="about-header">
+                  <h4><center>Tools we use for Web Development</center></h4>
+                    <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+                        <div class="row" style="margin-left: -34px;">
+                          <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-2">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a1.png" style="padding-top: 7px;"></a></span>
+                          <p><center>Core PHP</center></p>
+                          </div> 
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a2.png" style="padding-top: 7px;"></a></span>
+                          <p><center>CodeIgniter</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a3.png" style="padding-top: 7px;"></a></span>
+                          <p><center>Laravel</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a4.png" style="padding-top: 7px;"></a></span>
+                          <p><center>Wordpress</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-2">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a5.png" style="padding-top: 7px;"></a></span>
+                          <p><center>HTML-5</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/icon/m.png" style="padding-top: 7px;"></a></span>
+                          <p><center>Magento</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a7.png" style="padding-top: 7px;"></a></span>
+                          <p><center>jQuery</center></p>
+                          </div>
+                          <div class="col-md-2 col-sm-4 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a8.png" style="padding-top: 7px;"></a></span>
+                          <p><center>Java Script</center></p>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4b">
+                        <div class="col-md-6 col-sm-12 col-xs-12" style="margin-left: -34px;">
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a1.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">Core PHP</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a2.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">CodeIgniter</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a3.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">Laravel</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a4.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">Wordpress</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12" style="margin-left: -34px;">
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a5.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">HTML-5</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a6.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">CSS-3</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a7.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">jQuery</p>
+                          </div>
+                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <span><a href="#set-1" class="hi-icon text-center"><img src="assets/img/tech/a8.png" style="padding-top: 7px;"></a></span>
+                          <p style="float: right;">Java Script</p>
+                          </div>
+                        </div>
+                    </div> -->
+                  <!-- <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Core PHP</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;CodeIgniter</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Laravel</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Wordpress</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Java Script</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;jQuery</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;HTML-5, CSS-3</p> -->
+              </div>
+            </div>
+            <div class="row container">
+              <div class="about-header">
+                  <h4><center>Areas we work in:</center></h4>
+                  <p><center>Having explored and developed mobile app for various areas, we cater to serve in following areas like:</center> </p>
+                  <br><br>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/1.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Online Portals</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <center><span><a href="#">Online Portals</a></span></center>
+                                <p>An Online Portal refers to the webpage (or website) that provides users an entryway to a variety of information, tools, links, and more.</p>
+                                <br><br>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/2.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">E-commerce</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#"> E-commerce</a></h3>
+                                <p>E-commerce is a transaction of buying or selling online. Electronic commerce draws on technologies such as mobile commerce, electronic funds transfer,Internet marketing, online transaction processing.</p>
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/3.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Business</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Business</a></h3>
+                                <p>E-business can comprise a range of functions and services, ranging from the development of intranets and extranets to e-service, the provision of services and tasks over the Internet by application service providers.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/4.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Education</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Education</a></h3>
+                                <p>When it comes to online learning in education, the model has been pretty straightforward - up until the early 2000s education was in a classroom of students with a teacher who led the process.<br></p>
+                                <br>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/5.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Social Networking</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Social Networking</a></h3>
+                                <p>A social networking service is an online platform which people use to build social networks or social relations with other people who share similar personal or career interests, activities, backgrounds or real-life connections.</p>
+                                <br>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/7.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Healthcare</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Healthcare</a></h3>
+                                <p>A health system, also sometimes referred to as health care system or as healthcare system, is the organization of people, institutions, and resources that deliver health care services to meet the health needs of target populations.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/6.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Finance</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Finance</a></h3>
+                                <p>Finanace use for businesses, online finance can dramatically improve efficiency and decrease the costs of internal business functions such as expense reporting, contract labor management, and time-and-billing procedures</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="courses-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/area/8.png" alt="">
+                            <div class="courses-price">
+                                <center><span class="years">Tours and Travel</span></center>
+                            </div>
+                        </div>
+                        <div class="course-detail-wrap">
+                            <!-- <div class="teacher-wrap">
+                                
+                                <img src="assets/img/slider/t1.png" alt="">
+                            </div> -->
+                            <!-- <div class="course-content">
+                                <h3><a href="#">Tours and Travel</a></h3>
+                                <p>toues and travel website used for book the ticket online also plan different trips for the customer around the world. it provide different packages as per customer's choice.<br></p><br><br>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                  <!-- <div class="col-md-3">
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Online Portals</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Business</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Social Networking</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Finance</p>
+                  </div>
+                  <div class="col-md-3">
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;E-commerce</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Education</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Healthcare</p>
+                  <p><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Tours and Travel</p>
+                  </div> -->
+              </div>
+            </div>
+            <div class="row container">
+              <div class="about-header">
+                  <div style="margin-bottom: 20px;"></div>
+                  <p>Our Website design and web development services start with a consultation to really know your business aim and targeted people. Our experienced web developer and designers create several web designs with several layouts, size, fonts and color choices. Then as per your choice and selection among them, we fully develop and design it as per your need. Our team is always ready to help you and change the web design as per your need. We will not limit your choices and try to provide the very best solutions. We use the latest techniques to boost site traffic from the various platforms and give a guarantee that every website we design has the great user experience.</p>
+                  <div style="margin-bottom: 15px;"></div>
+                  <p class="help"><b>Are you confused about what type of web design your business need? Contact our experienced team and get the best web solutions.</b></p>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Us section End -->   
+<?php 
+include 'footer.php'; 
+?>
