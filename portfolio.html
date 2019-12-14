@@ -1,10 +1,9 @@
 
-<?php 
-include 'header.php'; 
-?>
+{% extends "header.html" %}
+{% block body %}
 
     <!-- Page Header Start -->
-    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+  <div class="page-header" style="background: url('{{url_for('static',filename='assets/img/banner1.jpg')}}');">
       <div class="container">
         <div class="row">         
           <div class="col-md-12">
@@ -29,7 +28,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/sk.jpg" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/sk.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -50,7 +49,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/sk.png" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/sk.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -67,30 +66,13 @@ include 'header.php';
         </div>
       </div>
     </div>
-    <!-- <div class="col-md-6 col-sm-6 col-xs-12">
-      <div class="news-grid-item">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/p3.png" alt="">
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="news-content">
-            <h3 class="news-title"><a href="cctvstore.php">S & S solutions</a></h3>
-              <div class="meta">
-               
-              </div>
-            <p class="desc">S & S solutions is an online store for Uniview CCTV / IP cameras and related products.</p>
-            <a href="cctvstore.php" class="btn btn-common btn-sm">View More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+   
     <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/mobile.jpg" alt="">
+            
+            <img src="{{url_for('static',filename='assets/img/news/mobile.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -111,7 +93,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/jewel.jpg" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/jewel.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -133,7 +115,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/iot.jpg" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/iot.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -154,7 +136,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/erp.jpg" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/erp.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -176,7 +158,7 @@ include 'header.php';
       <div class="news-grid-item">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="assets/img/news/ecommerce.jpg" alt="">
+            <img src="{{url_for('static',filename='assets/img/news/ecommerce.jpg')}}" alt="">
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="news-content">
@@ -199,7 +181,4 @@ include 'header.php';
   </div>
 </div>
 
-
-<?php 
-include 'footer.php'; 
-?>
+{% endblock %}
