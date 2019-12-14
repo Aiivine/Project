@@ -1,9 +1,7 @@
-<?php 
-include 'header.php'; 
-?>
-
+{% extends "header.html" %}
+{% block body %}
     <!-- Page Header Start -->
-    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+     <div class="page-header" style="background: url('{{url_for('static',filename='assets/img/banner1.jpg')}}');">
       <div class="container">
         <div class="row">         
           <div class="col-md-12">
@@ -57,7 +55,9 @@ include 'header.php';
                    </div>
 
                    <div class="col-md-6 col-sm-6 col-xs-12">
-                     <img src="assets/img/tech/front-end-development.png" style="margin-top: -11px;">
+
+
+                     <img src="{{url_for('static',filename='assets/img/news/ecommerce.jpg')}}" style="margin-top: -11px;">
                      
                    </div>
                    </div>
@@ -69,7 +69,9 @@ include 'header.php';
                    <div style="margin-bottom: 20px;"></div>
                    <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                           <img src="assets/img/tech/responsive2.png" style="margin-top: -11px;">
+
+
+                           <img src="{{url_for('static',filename='assets/img/tech/responsive2.png')}}" style="margin-top: -11px;">
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                           <br>
@@ -92,7 +94,7 @@ include 'header.php';
                          <p class="list-sp" style="font-size: 16px;padding-top: 10px;"><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;We arrange content with related images that looks good in every device.</p>
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                           <img src="assets/img/tech/responsive1.png" style="margin-top: -11px;">
+                           <img src="{{url_for('static',filename='assets/img/tech/responsive1.png')}}" style="margin-top: -11px;">
                       </div>
                    </div>
 
@@ -108,6 +110,4 @@ include 'header.php';
     </div>
     <!-- About Us section End --> 
 
-<?php 
-include 'footer.php'; 
-?>
+{% endblock %}
